@@ -7,7 +7,7 @@ import LoginPage from "./pages/loginpage/LoginPage";
 import SearchMoviePage from "./pages/searchmoviepage/SearchMoviePage";
 import GamePage from "./pages/gamepage/GamePage";
 import TopMenu from "./components/topmenu/TopMenu";
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
     return (
