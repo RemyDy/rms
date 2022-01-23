@@ -1,22 +1,22 @@
 import React from "react";
 import "./TopMenu.css"
 import {NavLink} from "react-router-dom";
-import {ReactComponent as Logo} from "src/assets/Logo_RmS.svg";
+import Logo from "../../assets/logorms.png"
 
 function TopMenu() {
     return (
-        <nav>
-            <Logo/>
-            <div className="nav-container">
+        <>
+            <nav>
+                <img src={Logo} alt="logo"/>
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/login">Login</NavLink></li>
                     <li><NavLink to="/random-movie-searcher">Search Movie</NavLink></li>
                     <li><NavLink to="/game">Game</NavLink></li>
                 </ul>
-                <h3>Random Movie Searcher</h3>
-            </div>
-        </nav>
+            </nav>
+            <h3>Random Movie Searcher</h3>
+        </>
     )
 }
 
